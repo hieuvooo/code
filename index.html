@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <title>iCode</title>
+    <link href="core.css" rel="stylesheet">
+    <link href="phone.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="prompt-overlay"></div>
+    <div class="alert-overlay"></div>
+    <div class="prompts"></div>
+    <div class="alerts"></div>
+    <nav>
+        <h1>iCode</h1>
+    </nav>
+    <div id="editor" class="edit"></div>
+    <textarea style="display: none;" id="copycode"></textarea>
+    <button id="copyCode" style="display:none;"></button>
+    <div class="phone black">
+        <div class="top-group"></div>
+        <div class="left-group"></div>
+        <div class="right-group"></div>
+        <div class="top-accents"></div>
+        <div class="bottom-accents"></div>
+        <div class="screen">
+            <div class="screen-wrap" id="boot">
+            </div>
+        </div>
+    </div>
+    <div class="right-panel">
+        <center>
+            <h1>iCode</h1>
+            <hr>
+            <h3>Phone Color</h3>
+            <div class="color-settings">
+                <div class="phone-white" onclick="iCode.PhoneColor('white');"></div>
+                <div class="phone-black" onclick="iCode.PhoneColor('black');"></div>
+            </div>
+            <h3>iCode Color</h3>
+            <div class="color-settings">
+                <div class="color-white" onclick="iCode.changeColor('white');"></div>
+                <div class="color-black" onclick="iCode.changeColor('black');"></div>
+            </div>
+            <hr>
+            <h3>Quick Commands</h3>
+            <a href="#" class="button" onclick="iCode.loadStorage();">Load From Storage</a>
+         <!--   <a href="#" class="button" onclick="iCode.importCode();">Import Code</a>-->
+            <a href="#" class="button" onclick="iCode.saveCode();">Save Code</a>
+            <a href="#" class="button" onclick="iCode.clearCode();">Clear iCode</a>
+            <a href="#" class="button" onclick="iCode.refreshPhone();">Refresh iPhone</a>
+            <a href="#" class="button" onclick="iCode.copyCode();">Copy to Clipboard</a>
+        </center>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="//ajaxorg.github.io/ace-builds/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="//ajaxorg.github.io/ace-builds/src-min-noconflict/ext-language_tools.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/v1.6.1/dist/clipboard.min.js"></script>
+    <script src="engine.js"></script>
+    <script src="core.js"></script>
+</body>
+
+</html>

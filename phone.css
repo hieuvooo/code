@@ -1,0 +1,239 @@
+.phone {
+    height: 600px;
+    width: 295px;
+    border-radius: 42px;
+    position: relative;
+}
+
+.phone.black {
+    background-color: #050505;
+    border: 3px solid #666;
+    /*  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.7) inset, -30px 0 0 rgba(0, 0, 0, 0.1), 0 0 0 3px rgba(255, 255, 255, 0.2) inset;*/
+}
+
+.phone.black .top-group {
+    background-color: #393939;
+    border: 1px solid #151515;
+}
+
+.phone.black .top-group:before {
+    background-color: #353535;
+    border: 1px solid #151515;
+}
+
+.phone.black .top-group:after {
+    background-color: #093BBF;
+    border: 1px solid #111;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.3) inset;
+}
+
+.phone.black .left-group,
+.phone.black .left-group:before,
+.phone.black .left-group:after {
+    background-color: #666;
+}
+
+.phone.black .right-group {
+    background-color: #666;
+    box-shadow: -1px 0 0 rgba(255, 255, 255, 0.2) inset;
+}
+
+.phone.black .screen .screen-wrap {
+    border-color: #000 !important;
+}
+
+.phone.black .screen:before {
+    background-color: #050505;
+}
+
+.phone.black .screen:after {
+    background: #111111;
+    background: linear-gradient(135deg, #000 0%, #333 35%, #333 65%, #000 100%);
+}
+
+.phone.rose {
+    background-color: #f6f8f9;
+    border: 3px solid #E6AEA6;
+    /*  box-shadow: 0 0 1px 2px #FFC4C4 inset, -30px 0 0 rgba(0, 0, 0, 0.1), 0 0 0 3px rgba(255, 255, 255, 0.9) inset;*/
+}
+
+.phone.rose .top-group {
+    background-color: #393939;
+    border: 1px solid #ccc;
+}
+
+.phone.rose .top-group:before {
+    background-color: #353535;
+    border: 1px solid #ccc;
+}
+
+.phone.rose .top-group:after {
+    background-color: #093BBF;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.3) inset;
+}
+
+.phone.rose .left-group,
+.phone.rose .left-group:before,
+.phone.rose .left-group:after {
+    background-color: #EF9191;
+}
+
+.phone.rose .right-group {
+    background-color: #EF9191;
+    box-shadow: -1px 0 0 rgba(255, 255, 255, 0.1) inset;
+}
+
+.phone.rose .screen:before {
+    background-color: #f9f9f9;
+}
+
+.phone.rose .screen:after {
+    background: #444;
+    background: linear-gradient(135deg, #885d59 0%, #F7EFED 35%, #F7EFED 65%, #885d59 100%);
+}
+
+.phone .top-group {
+    width: 42px;
+    height: 5px;
+    border-radius: 100px;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin-left: -21px;
+}
+
+.phone .top-group:before,
+.phone .top-group:after {
+    border-radius: 100px;
+    content: " ";
+    position: absolute;
+}
+
+.phone .top-group:before {
+    height: 6px;
+    width: 6px;
+    top: -19px;
+    left: 50%;
+    margin-left: -4px;
+}
+
+.phone .top-group:after {
+    height: 8px;
+    width: 8px;
+    left: -22px;
+    top: -4px;
+}
+
+.phone .left-group,
+.phone .left-group:before,
+.phone .left-group:after {
+    position: absolute;
+    left: -5px;
+    border-radius: 2px 0 0 2px;
+    width: 2px;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset;
+}
+
+.phone .left-group {
+    top: 65px;
+    height: 21px;
+}
+
+.phone .left-group:before,
+.phone .left-group:after {
+    content: " ";
+    height: 35px;
+    left: 0;
+}
+
+.phone .left-group:before {
+    top: 45px;
+}
+
+.phone .left-group:after {
+    top: 93px;
+}
+
+.phone .right-group {
+    top: 109px;
+    height: 35px;
+    position: absolute;
+    right: -5px;
+    border-radius: 0 2px 2px 0;
+    width: 2px;
+}
+
+.phone .top-accents:before,
+.phone .top-accents:after,
+.phone .bottom-accents:before,
+.phone .bottom-accents:after {
+    height: 11px;
+    width: 4px;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    content: " ";
+}
+
+.phone .top-accents:before,
+.phone .bottom-accents:before {
+    left: -3px;
+}
+
+.phone .top-accents:after,
+.phone .bottom-accents:after {
+    right: -3px;
+}
+
+.phone .top-accents:before,
+.phone .top-accents:after {
+    top: 35px;
+}
+
+.phone .bottom-accents:before,
+.phone .bottom-accents:after {
+    bottom: 35px;
+}
+
+.phone .screen {
+    height: 475px;
+    width: 269px;
+    background-color: #fff;
+    margin: 60px auto 0;
+    position: relative;
+}
+
+.phone .screen .screen-wrap {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border: 1px solid #eee;
+}
+
+.phone .screen img {
+    width: 100%;
+    height: 100%;
+}
+
+.phone .screen:before {
+    height: 38px;
+    width: 38px;
+    border-radius: 100px;
+    content: " ";
+    position: absolute;
+    bottom: -47px;
+    left: 50%;
+    margin-left: -19px;
+    z-index: 3;
+}
+
+.phone .screen:after {
+    height: 42px;
+    width: 42px;
+    border-radius: 100px;
+    content: " ";
+    position: absolute;
+    bottom: -49px;
+    left: 50%;
+    margin-left: -21px;
+}
